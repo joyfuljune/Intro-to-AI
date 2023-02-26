@@ -1,3 +1,6 @@
+<h1 align='center'> 人工智能导论 实验零 </h1>
+请先阅读本文档，然后阅读notebook.md，最后下载working-with-cells.ipynb作为入门练习。
+
 <div class="col-12">
             <div class="ud-atom">
   <h3><p>安装说明</p></h3>
