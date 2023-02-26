@@ -360,12 +360,11 @@ custom_channels:
 </p>
 
 <h3 id="h1">
-
 <main class="container">
         <div class="row">
           <div class="col-12">
             <div class="ud-atom">
-  <h3></h3>
+</h3>
   <div>
 <h1 id="本门课程使用的-python-版本">本门课程使用的 Python 版本</h1>
 <p>人工智能导论实验部分将专门使用（或者已经使用） Python 3。 </p>
