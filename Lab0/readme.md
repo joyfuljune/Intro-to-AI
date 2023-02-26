@@ -171,16 +171,7 @@
 </div>
 
 </div>
-<div class="divider"></div>
-          </div>
-
-          <div class="col-12">
-            <p class="text-right">
-              <a href="06. 更多环境操作.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
-            </p>
-          </div>
-        </div>
-      </main>
+</main>
       
 <main class="container">
   <div>
