@@ -336,7 +336,7 @@ custom_channels:
 
 <p>3. 搜索“# The directory to use for notebooks and kernels.”，找到下方<code># c.NotebookApp.notebook_dir = ‘’</code> 并修改为<code>c.NotebookApp.notebook_dir = ‘指定的工作路径’</code>（注意将#号删除,以及引号为英文引号）</p> 
 <p><figure class="figure">
-  <img src="img/dir.png" alt="修改路径" class="img img-fluid">
+  <img src="img/dir.png" alt="修改路径" style="max-width: 80%; max-height: 80%;" class="img img-fluid">
     <figcaption class="figure-caption">
                     <p>修改路径</p>
                       </figcaption></figure>
@@ -346,14 +346,14 @@ custom_channels:
 
 <p>5. 在桌面上找到Jupyter快捷方式，或者在开始菜单搜索Jupyter，右键选择“更多”->“打开文件位置”。
 <figure class="figure">
-<img src="img/props.png" alt="修改属性" class="img img-fluid">
+<img src="img/props.png" alt="修改属性" style="max-width: 80%; max-height: 80%;" class="img img-fluid">
 <figcaption class="figure-caption">
 <p>修改属性</p>
 </figcaption></figure>
 选择“属性”，如下图所示，修改“%USERPROFILE%为刚才修改后的地址。如<code>...\jupyter-notebook-script.py "D:\\"</code>
 
 <figure class="figure">
-<img src="img/homepath.png" alt="修改地址" class="img img-fluid">
+<img src="img/homepath.png" alt="修改地址" style="max-width: 80%; max-height: 80%;" class="img img-fluid">
 <figcaption class="figure-caption">
 <p>修改地址</p>
 </figcaption></figure>至此可以通过Jupyter快捷方式直接打开新的地址。（注意地址中的'\'始终是2个）
