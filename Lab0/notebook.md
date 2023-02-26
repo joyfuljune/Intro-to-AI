@@ -11,7 +11,7 @@
   <h3></h3>
   <div>
   <figure class="figure">
-    <img src="img/new-notebook.png" alt="空白文件" style="width: 500px; height: 250px;" class="img img-fluid">
+    <img src="img/new-notebook.png" alt="空白文件" style="width: 500px; height: 300px;" class="img img-fluid">
     <figcaption class="figure-caption">
       空白文件
     </figcaption>
@@ -528,7 +528,7 @@ $$</code></pre>
             <div class="ud-atom">
   <h3></h3>
   <div>
-  <h1 id="创建幻灯片">创建幻灯片</h1>
+  <h1 id="创建幻灯片">创建幻灯片（选看）</h1>
 <p>通过 notebook 创建幻灯片是我最爱的功能之一，<a href="http://nbviewer.jupyter.org/format/slides/github/jorisvandenbossche/2015-PyDataParis/blob/master/pandas_introduction.ipynb#/" rel="noopener noreferrer" target="_blank">你可以在浏览器中直接打开它</a>，它介绍了用于处理数据的 Pandas。</p>
 <p>在 notebook 中创建幻灯片的过程像平常一样，但需要指定作为幻灯片的单元格和单元格的幻灯片类型。在菜单栏中，点击“View”（视图）&gt;“Cell Toolbar”（单元格工具栏）&gt;“Slideshow”（幻灯片），以便在每个单元格上弹出幻灯片单元格菜单。</p>
 </div>
@@ -582,6 +582,9 @@ $$</code></pre>
 
 </div>
 <div class="divider"></div>
-          </div>          
+</div>          
+
+<div>
+========文档结束========
 
 
