@@ -330,10 +330,7 @@ custom_channels:
 
 <p>2.  按照上图中路径寻找文件名是<code>“jupyter_notebook_config.py”</code>的文件。使用记事本或者默认程序打开。</p> 
 
-<p>3. 搜索
-“# The directory to use for notebooks and kernels.”下面的</p> 
-<p>“# c.NotebookApp.notebook_dir = ‘’”为</p> 
-<p>“c.NotebookApp.notebook_dir = ‘指定的工作路径’”（注意将#号删除）</p> 
+<p>3. 搜索“# The directory to use for notebooks and kernels.”，找到下方“# c.NotebookApp.notebook_dir = ‘’” 并修改为“c.NotebookApp.notebook_dir = ‘指定的工作路径’”（注意将#号删除）</p> 
 <p><img src="https://s2.51cto.com/images/blog/202106/18/62ca3a7471d583f9846028ff3621a57f.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=/format,webp/resize,m_fixed,w_1184" alt="如何修改jupyter notebook的 默认目录和默认浏览器？_Python_03"></p> 
 <p>然后重启一下<code>jupyter nootbook</code>，默认路径确实更改了！</p> 
 <h3 id="h1">
