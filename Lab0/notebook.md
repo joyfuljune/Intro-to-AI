@@ -11,7 +11,7 @@
   <h3></h3>
   <div>
   <figure class="figure">
-    <img src="img/new-notebook.png" alt="空白文件" style="width: 600px; height: 450px;" class="img img-fluid">
+    <img src="img/new-notebook.png" alt="空白文件" style="width: 500px; height: 250px;" class="img img-fluid">
     <figcaption class="figure-caption">
       空白文件
     </figcaption>
@@ -92,7 +92,7 @@
   <h3></h3>
   <div>
   <h1 id="jupyter-notebook-是什么？">Jupyter notebook 是什么？</h1>
-<p>欢迎学习本课程——如何使用 <a href="http://jupyter.org/" rel="noopener noreferrer" target="_blank">Jupyter</a> notebook。Jupyter notebook 是一种 Web 应用，能让用户将说明文本、数学方程、代码和可视化内容全部组合到一个易于共享的文档中。例如，不久前我共享了我最爱的一个 Jupyter notebook ，它分析了 <a href="https://www.ligo.caltech.edu/news/ligo20160211" rel="noopener noreferrer" target="_blank">LIGO 实验</a>探测到的<a href="https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.html" rel="noopener noreferrer" target="_blank">两个碰撞的黑洞所发出的引力波</a>。你可以下载数据，运行 notebook 中的代码，重复整个分析，实际上等于你自己探测引力波！</p>
+<p>Jupyter notebook 是一种 Web 应用，能让用户将说明文本、数学方程、代码和可视化内容全部组合到一个易于共享的文档中。例如，不久前我共享了我最爱的一个 Jupyter notebook ，它分析了 <a href="https://www.ligo.caltech.edu/news/ligo20160211" rel="noopener noreferrer" target="_blank">LIGO 实验</a>探测到的<a href="https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.html" rel="noopener noreferrer" target="_blank">两个碰撞的黑洞所发出的引力波</a>。你可以下载数据，运行 notebook 中的代码，重复整个分析，实际上等于你自己探测引力波！</p>
 <p>Jupyter Notebook 已迅速成为处理数据的必备工具。其用途包括<a href="http://nbviewer.jupyter.org/github/jmsteinw/Notebooks/blob/master/IndeedJobs.ipynb" rel="noopener noreferrer" target="_blank">数据清理和探索</a>、可视化、<a href="http://nbviewer.jupyter.org/github/masinoa/machine_learning/blob/master/04_Neural_Networks.ipynb" rel="noopener noreferrer" target="_blank">机器学习</a>和<a href="http://nbviewer.jupyter.org/github/tdhopper/rta-pyspark-presentation/blob/master/slides.ipynb" rel="noopener noreferrer" target="_blank">大数据分析</a>。我为我的个人博客创建了<a href="https://github.com/mcleonard/blog_posts/blob/master/body_fat_percentage.ipynb" rel="noopener noreferrer" target="_blank">一个 notebook 示例</a>，它展示了 notebook 的许多特点。这项工作通常在终端中完成，也即使用普通的 Python shell 或 IPython 完成。可视化在单独的窗口中进行，而文字资料以及各种函数和类脚本包含在独立的文档中。但是，notebook 能将这一切集中到一处，让用户一目了然。</p>
 <p>GitHub 上也直接支持 Jupyter notebook 的渲染。借助此出色的功能，你可以轻松地共享工作。<a href="http://nbviewer.jupyter.org/" rel="noopener noreferrer" target="_blank">http://nbviewer.jupyter.org/</a> 也会提供 GitHub 代码库中的 notebook ，以及存储在其他地方的 notebook。</p>
 </div>
@@ -164,8 +164,7 @@
   <div>
   <figure class="figure">
     <img src="img/notebook-server.png" alt="" class="img img-fluid">
-    <figcaption class="figure-caption">
-      
+    <figcaption class="figure-caption">空白目录
     </figcaption>
   </figure>
 </div>
@@ -231,8 +230,7 @@
   <div>
   <figure class="figure">
     <img src="img/notebook-shutdown.png" alt="" class="img img-fluid">
-    <figcaption class="figure-caption">
-      
+    <figcaption class="figure-caption">关闭notebook
     </figcaption>
   </figure>
 </div>
@@ -251,8 +249,7 @@
   <div>
   <figure class="figure">
     <img src="img/server-shutdown.png" alt="" class="img img-fluid">
-    <figcaption class="figure-caption">
-      
+    <figcaption class="figure-caption">关闭服务器
     </figcaption>
   </figure>
 </div>
@@ -285,10 +282,10 @@
   <h3></h3>
   <div>
   <h2 id="链接">链接</h2>
-<p>要在 Markdown 中添加链接，请在文本两侧加上方括号，并在 URL 两侧加上圆括号，例如：<code>[Udacity's home page](https://www.udacity.com)</code> 表示指向 <a href="https://www.udacity.com" rel="noopener noreferrer" target="_blank">Udacity's home page</a> 的链接。</p>
+<p>要在 Markdown 中添加链接，请在文本两侧加上方括号，并在 URL 两侧加上圆括号，例如：<code>[南京工业大学浦江学院教务处](https://my.njpji.cn)</code> 表示指向 <a href="https://my.njpji.cn" rel="noopener noreferrer" target="_blank">教务处网址</a> 的链接。</p>
 <h2 id="强调效果">强调效果</h2>
-<p>可以使用星号或下划线（<code>*</code> 或 <code>_</code>）来表示粗体或斜体，从而添加强调效果。对于斜体，在文本两侧加上一个星号或下划线，例如 <code>_gelato_</code> 或 <code>*gelato*</code> 会呈现为 <em>gelato</em>。</p>
-<p>粗体文本使用两个符号，例如 <code>**aardvark**</code> 或 <code>__aardvark__</code> 会呈现为 <strong>aardvark</strong>。</p>
+<p>可以使用星号或下划线（<code>*</code> 或 <code>_</code>）来表示粗体或斜体，从而添加强调效果。对于斜体，在文本两侧加上一个星号或下划线，例如 <code>_斜体_</code> 或 <code>*斜体*</code> 会呈现为 <em>斜体</em>。</p>
+<p>粗体文本使用两个符号，例如 <code>**加粗**</code> 或 <code>__加粗__</code> 会呈现为 <strong>加粗</strong>。</p>
 <p>只要在文本两侧使用相同的符号，星号和下划线的作用都一样。</p>
 </div>
 
@@ -317,24 +314,21 @@ response = requests.get('https://www.udacity.com')</code></pre>
 <pre><code>$$
 y = \frac{a}{b+c}
 $$</code></pre>
-<p>此功能的确很有用，因此，如果你没有用过 LaTeX，<a href="http://data-blog.udacity.com/posts/2016/10/latex-primer/" rel="noopener noreferrer" target="_blank">请阅读这篇入门文档</a>，它介绍了如何使用 LaTeX 来创建数学表达式。</p>
+<p>此功能的确很有用，因此，如果你没有用过 LaTeX，<a href="https://blog.csdn.net/GarfieldEr007/article/details/51646604" rel="noopener noreferrer" target="_blank">请阅读这篇入门文档</a>，它介绍了如何使用 LaTeX 来创建数学表达式。</p>
+</div>
 </div>
 
-</div>
-<div class="divider"></div><div class="ud-atom">
-  <h3></h3>
-  <div>
-  <div class="plyr plyr--full-ui plyr--video plyr--html5 plyr--paused plyr--stopped plyr--fullscreen-enabled"><div class="plyr__controls"><button type="button" class="plyr__control" data-plyr="play" aria-label="Play"><svg class="icon--pressed" role="presentation" focusable="false"><use xlink:href="#plyr-pause"></use></svg><svg class="icon--not-pressed" role="presentation" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="label--pressed plyr__sr-only">Pause</span><span class="label--not-pressed plyr__sr-only">Play</span></button><div class="plyr__progress"><input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" autocomplete="off" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="8.9" aria-valuenow="0" id="plyr-seek-2919" style="--value:0%;"><progress class="plyr__progress__buffer" min="0" max="100" value="100" role="presentation" aria-hidden="true">% buffered</progress><span class="plyr__tooltip">00:00</span></div><div class="plyr__time plyr__time--current" aria-label="Current time">00:08</div><div class="plyr__volume" hidden=""><button type="button" class="plyr__control" data-plyr="mute" hidden=""><svg class="icon--pressed" role="presentation" focusable="false"><use xlink:href="#plyr-muted"></use></svg><svg class="icon--not-pressed" role="presentation" focusable="false"><use xlink:href="#plyr-volume"></use></svg><span class="label--pressed plyr__sr-only">Unmute</span><span class="label--not-pressed plyr__sr-only">Mute</span></button><input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="plyr-volume-2919" aria-valuetext="100.0%" style="--value:100%;"></div><button type="button" class="plyr__control" data-plyr="captions"><svg class="icon--pressed" role="presentation" focusable="false"><use xlink:href="#plyr-captions-on"></use></svg><svg class="icon--not-pressed" role="presentation" focusable="false"><use xlink:href="#plyr-captions-off"></use></svg><span class="label--pressed plyr__sr-only">Disable captions</span><span class="label--not-pressed plyr__sr-only">Enable captions</span></button><div class="plyr__menu"><button aria-haspopup="true" aria-controls="plyr-settings-2919" aria-expanded="false" type="button" class="plyr__control" data-plyr="settings"><svg role="presentation" focusable="false"><use xlink:href="#plyr-settings"></use></svg><span class="plyr__sr-only">Settings</span></button><div class="plyr__menu__container" id="plyr-settings-2919" hidden=""><div><div id="plyr-settings-2919-home"><div role="menu"><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Captions<span class="plyr__menu__value">Disabled</span></span></button><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Quality<span class="plyr__menu__value">undefined</span></span></button><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true"><span>Speed<span class="plyr__menu__value">1.75×</span></span></button></div></div><div id="plyr-settings-2919-captions" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Captions</span><span class="plyr__sr-only">Go back to previous menu</span></button><div role="menu"></div></div><div id="plyr-settings-2919-quality" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Quality</span><span class="plyr__sr-only">Go back to previous menu</span></button><div role="menu"></div></div><div id="plyr-settings-2919-speed" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Speed</span><span class="plyr__sr-only">Go back to previous menu</span></button><div role="menu"><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="0.5"><span>0.5×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="0.75"><span>0.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1"><span>Normal</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.25"><span>1.25×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.5"><span>1.5×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="true" value="1.75"><span>1.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="2"><span>2×</span></button></div></div></div></div></div><button type="button" class="plyr__control" data-plyr="fullscreen"><svg class="icon--pressed" role="presentation" focusable="false"><use xlink:href="#plyr-exit-fullscreen"></use></svg><svg class="icon--not-pressed" role="presentation" focusable="false"><use xlink:href="#plyr-enter-fullscreen"></use></svg><span class="label--pressed plyr__sr-only">Exit fullscreen</span><span class="label--not-pressed plyr__sr-only">Enter fullscreen</span></button></div><div class="plyr__video-wrapper"><video loop="" autoplay="" style="width: 100%">
-<source src="media/unnamed-220107-0.mp4" type="video/mp4">
-</video><div class="plyr__poster"></div></div><div class="plyr__captions"></div><button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><svg role="presentation" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="plyr__sr-only">Play</span></button></div>
-</div>
+  <figure class="figure">
+      <img src="img/unnamed-220107-0.gif" alt="" class="img img-fluid">
+          <figcaption class="figure-caption">markdown语法
+              </figcaption>
+                </figure>
 
-</div>
 <div class="divider"></div><div class="ud-atom">
   <h3></h3>
   <div>
   <h2 id="小结">小结</h2>
-<p>在编写 Markdown 时，可以参考这个<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" rel="noopener noreferrer" target="_blank">速查指南</a>。我建议使用 Markdown 单元格，与使用一堆代码块相比，这使 notebook 变得更易于阅读。</p>
+<p>在编写 Markdown 时，可以参考这个<a href="https://blog.csdn.net/u014061630/article/details/81359144" rel="noopener noreferrer" target="_blank">速查指南</a>。我建议使用 Markdown 单元格，与使用一堆代码块相比，这使 notebook 变得更易于阅读。</p>
 </div>
 
 </div>
@@ -360,8 +354,7 @@ $$</code></pre>
   <div>
   <figure class="figure">
     <img src="img/magic-timeit.png" alt="" class="img img-fluid">
-    <figcaption class="figure-caption">
-      
+    <figcaption class="figure-caption">函数计时
     </figcaption>
   </figure>
 </div>
@@ -380,8 +373,7 @@ $$</code></pre>
   <div>
   <figure class="figure">
     <img src="img/magic-timeit2.png" alt="" class="img img-fluid">
-    <figcaption class="figure-caption">
-      
+    <figcaption class="figure-caption">代码计时     
     </figcaption>
   </figure>
 </div>
@@ -491,7 +483,7 @@ $$</code></pre>
 <p>例如，要将 notebook 转换为 HTML 文件，请在终端中使用</p>
 <pre><code class="bash language-bash">jupyter nbconvert --to html notebook.ipynb</code></pre>
 <p>我们也可以在notebook界面中点击<code>File</code>，在弹出的菜单中点击<code>Download as</code>，之后选择我们需要转换的格式。</p>
-<p><img src="media/unnamed-220122-0.gif"></p>
+<p><img src="img/unnamed-220122-0.gif"></p>
 <p>要将 notebook 与不使用 notebook 的其他人共享，转换为 HTML 很有用。而要在博客和其他接受 Markdown 格式化的文本编辑器中显示 notebook，Markdown 很合适。</p>
 </div>
 
@@ -502,7 +494,7 @@ $$</code></pre>
   <figure class="figure">
     <img src="img/nbconvert-example.png" alt="" class="img img-fluid">
     <figcaption class="figure-caption">
-      
+      类型转换
     </figcaption>
   </figure>
 </div>
@@ -520,6 +512,16 @@ $$</code></pre>
           </div>
           
           
-          
+<div class="col-12">
+<div class="ud-atom">
+  <h3></h3>
+<div>
+<h1 id="代码单元格">代码单元格</h1>
+  <p>notebook 中的大部分工作均在代码单元格中完成。这是编写和执行代码的地方。在代码单元格中可以执行多种操作，例如编写代码、给变量赋值、定义函数和类、导入包等。在一个单元格中执行的任何代码在所有其他单元格中均可用。</p>
+  <p>请在下面下载此 notebook <a href="https://raw.githubusercontent.com/udacity/cn-deep-learning/master/tutorials/jupyter-notebook-tutorial/working-with-code-cells.ipynb" rel="noopener noreferrer" target="_blank">Working With Code Cells</a>，然后从你自己的 notebook 服务器运行它（在你的终端中，转到包含此 notebook 文件的目录，然后输入 <code>jupyter notebook</code>）。浏览器可能会尝试不下载就打开此 notebook 文件。如果是这样，请右击链接并选择“链接另存为…”。</p>
+</div>
+</div>
+<div class="divider"></div>
+</div>       
           
           
