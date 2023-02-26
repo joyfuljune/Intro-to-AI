@@ -11,7 +11,7 @@
   <h3></h3>
   <div>
   <figure class="figure">
-    <img src="img/new-notebook.png" alt="空白文件" style="max-width:60%; max-height:60%;" class="img img-fluid">
+    <img src="img/new-notebook.png" alt="空白文件" style="width: 200px; height: 150px;" class="img img-fluid">
     <figcaption class="figure-caption">
       空白文件
     </figcaption>
