@@ -338,7 +338,7 @@ custom_channels:
 <img src="img/props.png" alt="属性"> 
 选择“属性”，如下图所示，修改“%USERPROFILE%为刚才修改后的地址。如<code>...\jupyter-notebook-script.py "D:\\"</code>
 <img src="img/homepath.png" alt="属性"> 
-至此可以通过Jupyter快捷方式直接打开新的地址。
+至此可以通过Jupyter快捷方式直接打开新的地址。（注意地址中的'\'始终是2个）
 
 
 <h3 id="h1">
