@@ -86,9 +86,6 @@
 <div class="divider"></div>
           </div>
 
-<<<<<<< HEAD
-
-=======
 <div class="col-12">
             <div class="ud-atom">
   <h3></h3>
@@ -157,4 +154,199 @@
   </details>
 </div>
 
+<main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="最佳做法">最佳做法</h1>
+<h2 id="使用环境">使用环境</h2>
+<p>对我有很大帮助的一点是，我的 Python 2 和 Python 3 具有独立的环境。我使用了 <code>conda create -n py2 python=2</code> 和 <code>conda create -n py3 python=3</code> 创建两个独立的环境，即 <code>py2</code> 和 <code>py3</code>。现在，我的每个 Python 版本都有一个通用环境。在所有这些环境中，我都安装了大多数常用的标准数据科学包（numpy、scipy、pandas 等）。</p>
+<p>我还发现，为我从事的每个项目创建环境很有用。这对于与数据不相关的项目（例如使用 Flask 开发的 Web 应用）也很有用。例如，我为我的个人博客（使用 <a href="http://docs.getpelican.com/en/stable/" rel="noopener noreferrer" target="_blank">Pelican</a>）创建了一个环境。</p>
+<h2 id="共享环境">共享环境</h2>
+<p>在 GitHub 上共享代码时，最好同样创建环境文件并将其包括在代码库中。这能让其他人更轻松地安装你的代码的所有依赖项。对于不使用 conda 的用户，我通常还会使用 <code>pip freeze</code>（<a href="https://pip.pypa.io/en/stable/reference/pip_freeze/" rel="noopener noreferrer" target="_blank">在此处了解详情</a>）将一个 pip <code>requirements.txt</code> 文件导出并包括在其中。</p>
+<h2 id="了解更多信息">了解更多信息</h2>
+<p>要详细了解 conda 以及它如何融入到 Python 生态系统中，请查看这篇由 Jake Vanderplas 撰写的文章：<a href="https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/" rel="noopener noreferrer" target="_blank">Conda myths and misconceptions</a>（有关 conda 的迷思和误解）。此外，如果你有多余精力，也可以参考这篇 <a href="http://conda.pydata.org/docs/using/index.html" rel="noopener noreferrer" target="_blank">conda 文档</a>。</p>
+</div>
 
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="06. 更多环境操作.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+      
+<main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="保存和加载环境">保存和加载环境</h2>
+<p>共享环境这项功能确实很有用，它能让其他人安装你的代码中使用的所有包，并确保这些包的版本正确。你可以使用 <code>conda env export &gt; environment.yaml</code> 将包保存为 <a href="http://www.yaml.org/" rel="noopener noreferrer" target="_blank">YAML</a>。命令的第一部分 <code>conda env export</code> 用于输出环境中的所有包的名称（包括 Python 版本）。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/conda-env-export.png" alt="将导出的环境输出到终端中" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>将导出的环境输出到终端中</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>上图中，你可以看到环境的名称和所有依赖项及其版本。导出命令的第二部分 <code>&gt; environment.yaml</code> 将导出的文本写入到 YAML 文件 <code>environment.yaml</code> 中。现在可以共享此文件，而且其他人能够用于创建和你项目相同的环境。</p>
+<p>要通过环境文件创建环境，请使用 <code>conda env create -f environment.yaml</code>。这会创建一个新环境，而且它具有同样的在 <code>environment.yaml</code> 中列出的库。</p>
+<h2 id="列出环境">列出环境</h2>
+<p>如果忘记了环境的名称（我有时会这样），可以使用 <code>conda env list</code> 列出你创建的所有环境。你会看到环境的列表，而且你当前所在环境的旁边会有一个星号。默认的环境（即当你不在选定环境中时使用的环境）名为 <code>root</code>。</p>
+<h2 id="删除环境">删除环境</h2>
+<p>如果你不再使用某些环境，可以使用 <code>conda env remove -n env_name</code> 删除指定的环境（在这里名为 <code>env_name</code>）。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="07. 管理环境.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+      
+<main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="管理环境">管理环境</h1>
+<p>如前所述，你可以使用 conda 创建环境以隔离项目。要创建环境，请在终端中使用 <code>conda create -n env_name list of packages</code>。在这里，<code>-n env_name</code> 设置环境的名称（<code>-n</code> 是指名称），而 <code>list of packages</code> 是要安装在环境中的包的列表。例如，要创建名为 <code>my_env</code> 的环境并在其中安装 numpy，请键入 <code>conda create -n my_env numpy</code>。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/conda-create-env.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>创建环境时，可以指定要安装在环境中的 Python 版本。这在你同时使用 Python 2.x 和 Python 3.x 中的代码时很有用。要创建具有特定 Python 版本的环境，请键入类似于 <code>conda create -n py3 python=3</code> 或 <code>conda create -n py2 python=2</code> 的命令。实际上，我在我的个人计算机上创建了这两个环境。我将它们用作与任何特定项目均无关的通用环境，以处理普通的工作（可轻松使用每个 Python 版本）。这些命令将分别安装 Python 3 和 Python 2 的最新版本。要安装特定版本（例如 Python 3.3），请使用 <code>conda create -n py python=3.3</code>。</p>
+<h2 id="进入环境">进入环境</h2>
+<p>创建了环境后，在 OSX/Linux 上使用 <code>source activate my_env</code> 进入环境。在 Windows 上，请使用 <code>activate my_env</code>。</p>
+<div class="plyr plyr--full-ui plyr--video plyr--html5 plyr--paused plyr--stopped plyr--fullscreen-enabled"><div class="plyr__controls"><button type="button" class="plyr__control" data-plyr="play" aria-label="Play"><svg class="icon--pressed" role="presentation" focusable="false"><use xlink:href="#plyr-pause"></use></svg><svg class="icon--not-pressed" role="presentation" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="label--pressed plyr__sr-only">Pause</span><span class="label--not-pressed plyr__sr-only">Play</span></button><div class="plyr__progress"><input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" autocomplete="off" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="13.683333" aria-valuenow="0" id="plyr-seek-1528" style="--value:0%;"><progress class="plyr__progress__buffer" min="0" max="100" value="100" role="presentation" aria-hidden="true">% buffered</progress><span class="plyr__tooltip">00:00</span></div><div class="plyr__time plyr__time--current" aria-label="Current time">00:13</div><div class="plyr__volume" hidden=""><button type="button" class="plyr__control" data-plyr="mute" hidden=""><svg class="icon--pressed" role="presentation" focusable="false"><use xlink:href="#plyr-muted"></use></svg><svg class="icon--not-pressed" role="presentation" focusable="false"><use xlink:href="#plyr-volume"></use></svg><span class="label--pressed plyr__sr-only">Unmute</span><span class="label--not-pressed plyr__sr-only">Mute</span></button><input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="plyr-volume-1528" aria-valuetext="100.0%" style="--value:100%;"></div><button type="button" class="plyr__control" data-plyr="captions"><svg class="icon--pressed" role="presentation" focusable="false"><use xlink:href="#plyr-captions-on"></use></svg><svg class="icon--not-pressed" role="presentation" focusable="false"><use xlink:href="#plyr-captions-off"></use></svg><span class="label--pressed plyr__sr-only">Disable captions</span><span class="label--not-pressed plyr__sr-only">Enable captions</span></button><div class="plyr__menu"><button aria-haspopup="true" aria-controls="plyr-settings-1528" aria-expanded="false" type="button" class="plyr__control" data-plyr="settings"><svg role="presentation" focusable="false"><use xlink:href="#plyr-settings"></use></svg><span class="plyr__sr-only">Settings</span></button><div class="plyr__menu__container" id="plyr-settings-1528" hidden=""><div><div id="plyr-settings-1528-home"><div role="menu"><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Captions<span class="plyr__menu__value">Disabled</span></span></button><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Quality<span class="plyr__menu__value">undefined</span></span></button><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true"><span>Speed<span class="plyr__menu__value">1.75×</span></span></button></div></div><div id="plyr-settings-1528-captions" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Captions</span><span class="plyr__sr-only">Go back to previous menu</span></button><div role="menu"></div></div><div id="plyr-settings-1528-quality" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Quality</span><span class="plyr__sr-only">Go back to previous menu</span></button><div role="menu"></div></div><div id="plyr-settings-1528-speed" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Speed</span><span class="plyr__sr-only">Go back to previous menu</span></button><div role="menu"><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="0.5"><span>0.5×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="0.75"><span>0.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1"><span>Normal</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.25"><span>1.25×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.5"><span>1.5×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="true" value="1.75"><span>1.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="2"><span>2×</span></button></div></div></div></div></div><button type="button" class="plyr__control" data-plyr="fullscreen"><svg class="icon--pressed" role="presentation" focusable="false"><use xlink:href="#plyr-exit-fullscreen"></use></svg><svg class="icon--not-pressed" role="presentation" focusable="false"><use xlink:href="#plyr-enter-fullscreen"></use></svg><span class="label--pressed plyr__sr-only">Exit fullscreen</span><span class="label--not-pressed plyr__sr-only">Enter fullscreen</span></button></div><div class="plyr__video-wrapper"><video loop="" autoplay="">
+<source src="media/unnamed-220084-0.mp4" type="video/mp4">
+</video><div class="plyr__poster"></div></div><div class="plyr__captions"></div><button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><svg role="presentation" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="plyr__sr-only">Play</span></button></div>
+<p>进入环境后，你会在终端提示符中看到环境名称，它类似于 <code>(my_env) ~ $</code>。环境中只安装了几个默认的包，以及你在创建它时安装的包。你可以使用 <code>conda list</code> 检查这一点。在环境中安装包的命令与前面一样：<code>conda install package_name</code>。不过，这次你安装的特定包仅在你进入环境后才可用。要离开环境，请键入 <code>source deactivate</code>（在 OSX/Linux 上）。在 Windows 上，请使用 <code>deactivate</code>。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>“创建环境”测试题</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>你将使用哪个命令来创建名为 <code>data</code> 且安装了 Python 3.5、numpy 和 pandas 的环境？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1477602911049" name="220085" id="a1477602911049">
+        <label for="a1477602911049"><p>conda env create -n data python=3.5 numpy pandas</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1477603599067" name="220085" id="a1477603599067">
+        <label for="a1477603599067"><p>conda create data python=3.5 numpy pandas</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1477603600155" name="220085" id="a1477603600155">
+        <label for="a1477603600155"><p>conda create -n data python=3.5</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1477603618435" name="220085" id="a1477603618435">
+        <label for="a1477603618435"><p>conda create -n data python=3.5 numpy pandas</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    conda create -n data python=3.5 numpy pandas
+  </details>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="08. Python 版本说明.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+  
+<main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="优达学城使用的-python-版本">优达学城使用的 Python 版本</h1>
+<p>优达学城的大部分纳米学位课程将专门使用（或者已经使用） Python 3。 </p>
+<h2 id="为何选择-python-3">为何选择 Python 3</h2>
+<ul>
+<li>Python 2.7 逐渐<a href="https://pythonclock.org/" rel="noopener noreferrer" target="_blank">过时了</a></li>
+<li>Python 3.6 具有很多出色的功能，例如<a href="https://docs.python.org/3.6/whatsnew/3.6.html#pep-498-formatted-string-literals" rel="noopener noreferrer" target="_blank">格式化的字符串</a></li>
+</ul>
+<p>目前，Python 3 中已经具有很多新的功能，没必要再使用 Python 2，除非你使用的是旧版代码。所有新的 Python 代码应该用 Python 3 编写。</p>
+<h2 id="python-2-和-python-3-之间的主要差别">Python 2 和 Python 3 之间的主要差别</h2>
+<p>大部分情况下，Python 2 代码也可以用 Python 3 运行。当然，Python 3 中推出的大部分新功能无法向后兼容。而 Python 2 代码经常运行失败的是 <code>print</code> 语句。</p>
+<p>对于大部分的旧版 Python，包括 Python 2，输出功能如下所示：</p>
+<pre><code>print "Hello", "world!"
+&gt; Hello world!</code></pre>
+<p>Python 3 中改成了一个函数。</p>
+<pre><code>print("Hello", "world!")
+&gt; Hello world!</code></pre>
+<p>在 2.6 版中，<code>print</code> 函数通过 <code>__future__</code> 模块向后移植到 Python 2：</p>
+<pre><code># 在 Python 2.6 及以上版本中
+from __future__ import print_function
+print("Hello", "world!")
+&gt; Hello world!</code></pre>
+<p><code>print</code> 语句在 Python 3 中无法运行。如果你要输出内容，并希望在两个版本的 Python 中都可以，则需要在 Python 2 代码中导入 <code>print_function</code>。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+            </p>
+          </div>
+        </div>
+      </main>  
