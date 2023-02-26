@@ -317,8 +317,43 @@ custom_channels:
 </div>
 
 </div>
+                      
 </main>
+<div class="article-content-wrap">
+                    <div class="artical-content-bak main-content editor-side-new">
+                <div class="con editor-preview-side" id="result"><div class="markdown_views prism-atom-one-light">
+                    <h3 id="h0">
+<a></a>1. 修改默认目录</h3> 
+<p>方法如下：</p> 
+<p><strong>(1) 找到一个用于存放<code>config</code>文件的文件夹，用<code>cmd</code>来查找路径：</strong></p> 
+<p>在<code>cmd</code>中 输入命令<code>jupyter notebook --generate-config</code>（<code>前面是两个-后面是一个-</code>）<br><img src="https://s2.51cto.com/images/blog/202106/18/a9e79391d3a8686c6b69b8616160ac88.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=/format,webp/resize,m_fixed,w_1184" alt="如何修改jupyter notebook的 默认目录和默认浏览器？_	Jupyter教程" style="width: 100%;"></p> 
+<p><strong>(2) 按照第1步找到的路径寻找文件名是<code>“jupyter_notebook_config.py”</code>的一个文件</strong></p> 
+<p><img src="https://s2.51cto.com/images/blog/202106/18/e64ff39ac643df4899cf12547380f753.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=/format,webp/resize,m_fixed,w_1184" alt="如何修改jupyter notebook的 默认目录和默认浏览器？_	Jupyter教程_02" style="width: 100%;"></p> 
+<p><strong>(3) 用<code>notebook</code>打开该文件，修改</strong></p> 
+<p>“# The directory to use for notebooks and kernels.”下面的</p> 
+<p>“# c.NotebookApp.notebook_dir = ‘’”为</p> 
+<p>“c.NotebookApp.notebook_dir = ‘指定的工作路径’”（注意将#号删除）</p> 
+<p><img src="https://s2.51cto.com/images/blog/202106/18/62ca3a7471d583f9846028ff3621a57f.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=/format,webp/resize,m_fixed,w_1184" alt="如何修改jupyter notebook的 默认目录和默认浏览器？_Python_03"></p> 
+<p>然后重启一下<code>jupyter nootbook</code>，默认路径确实更改了！</p> 
+<h3 id="h1">
+<a></a>2. 修改默认浏览器</h3> 
+<p>搜索<code>‘c.NotebookApp.browser’</code>，在下面增加以下语句：</p> 
+<p><img src="https://s2.51cto.com/images/blog/202106/18/cc2096b0054c08c8fe772bfea2902470.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=/format,webp/resize,m_fixed,w_1184" alt="如何修改jupyter notebook的 默认目录和默认浏览器？_	Jupyter教程_04" style="width: 100%;"><br> 注：路径里面的<code>\</code>必须改成<code>\\</code>，否则失败！</p> 
+<p>然后重启软件即可。</p>
+                </div>
+                </div>
+            </div>
+        
+        <div id="asideoffset"></div>
+        <div class="clearfix label-list">
 
+            <!--            <span>本文包含：</span>-->
+            <!--          -->
+            <!--            <a href="" target="_blank"></a>-->
+
+        </div>
+    </div>
+                    
 
 <main class="container">
         <div class="row">
