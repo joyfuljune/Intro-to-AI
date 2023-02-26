@@ -58,7 +58,6 @@
 <p>Conda 安装了预编译的包。例如，Anaconda 发行版附带了使用 <a href="https://docs.continuum.io/mkl-optimizations/" rel="noopener noreferrer" target="_blank">MKL 库</a>编译的 Numpy、Scipy 和 Scikit-learn，从而加快了各种数学运算的速度。这些包由发行版的贡献者维护，这意味着它们通常滞后于最新版本。但是，由于有人需要利用这些包来进行系统构建，因此它们往往更为稳定，而且也更便于你使用。</p>
 <h2 id="环境">环境</h2>
 </div>
-
 </div>
 <div class="divider"></div><div class="ud-atom">
   <h3></h3>
@@ -92,10 +91,50 @@
   <div>
   <h1 id="管理包">管理包</h1>
 <p>安装了 Anaconda 之后，管理包是相当简单的。要安装包，请在终端中键入 <code>conda install package_name</code>。例如，要安装 numpy，请键入 <code>conda install numpy</code>。</p>
+<div>
+<figure class="figure">
+<img src="img/unnamed-220069-0.gif" alt="install numpy" class="img img-fluid">
+<figcaption class="figure-caption">
+</div>
 
-  <figure class="figure">
-      <img src="img/unnamed-220069-0.gif" alt="install numpy" class="img img-fluid">
-          <figcaption class="figure-caption">
+<h2>更新国内源</h2>
+<p>默认的conda install 是使用官方的源进行安装，由于服务器在国外，因此下载安装时通常会因为访问超时而导致安装失败。所以一般需要更改源的地址为国内地址。常用的源有以下这些：
+<ul>
+<li> 阿里云： <a href="https://www.anaconda.com/download/" rel="noopener noreferrer" target="_blank"> <a href="https://www.anaconda.com/download/" rel="noopener noreferrer" target="_blank"> https://mirrors.aliyun.com/pypi/simple/ </a> </li>
+<li> 中国科技大学：<a href="https://www.anaconda.com/download/" rel="noopener noreferrer" target="_blank"> https://pypi.mirrors.ustc.edu.cn/simple/ </a></li>
+<li> 豆瓣(douban)：<a href="https://www.anaconda.com/download/" rel="noopener noreferrer" target="_blank"> http://pypi.douban.com/simple/</a> </li>
+<li>清华大学：<a href="https://www.anaconda.com/download/" rel="noopener noreferrer" target="_blank"> https://pypi.tuna.tsinghua.edu.cn/simple/</a> </li>
+<li> 中国科学技术大学：<a href="https://www.anaconda.com/download/" rel="noopener noreferrer" target="_blank"> http://pypi.mirrors.ustc.edu.cn/simple/</a> </li> </ul>
+</p>
+
+<p>如果需要临时使用国内源，可以使用以下代码
+
+<pre><code class="language-text">pip install -i https://pypi.tuna.tsinghua.edu.cn/simple 你要安装的包名</code></pre>
+
+如果需要永久使用国内源，可以修改配置文件。
+首先，在终端输入<code>conda config --set show_channel_urls yes</code>
+
+其次，在根目录下找到该文件，（Windows用户在<code>C:\Users\用户名\\</code>找到，Linux和Mac用户在<code>/home/用户名/</code>下），使用文本编辑器打开后修改内容如下：
+<pre><code class="language-text">
+channels:
+  - defaults
+show_channel_urls: true
+default_channels:
+    - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main
+    - https://mirrors.bfsu.edu.cn/anaconda/pkgs/r
+    - https://mirrors.bfsu.edu.cn/anaconda/pkgs/msys2
+custom_channels:
+  conda-forge: https://mirrors.bfsu.edu.cn/anaconda/cloud
+  msys2: https://mirrors.bfsu.edu.cn/anaconda/cloud
+  bioconda: https://mirrors.bfsu.edu.cn/anaconda/cloud
+  menpo: https://mirrors.bfsu.edu.cn/anaconda/cloud
+  pytorch: https://mirrors.bfsu.edu.cn/anaconda/cloud
+  pytorch-lts: https://mirrors.bfsu.edu.cn/anaconda/cloud
+  simpleitk: https://mirrors.bfsu.edu.cn/anaconda/cloud</code></pre>
+
+如果需要换回conda的默认源，直接删除channels即可，命令如下：
+<pre><code class="language-text">conda config --remove-key channels</code></pre>
+</p>
 
 <p>你还可以同时安装多个包。类似 <code>conda install numpy scipy pandas</code> 的命令会同时安装所有这些包。还可以通过添加版本号（例如 <code>conda install numpy=1.10</code>）来指定所需的包版本。</p>
 <p>Conda 还会自动为你安装依赖项。例如，<code>scipy</code> 依赖于 <code>numpy</code>，因为它使用并需要 <code>numpy</code>。如果你只安装 <code>scipy</code> (<code>conda install scipy</code>)，则 conda 还会安装 <code>numpy</code>（如果尚未安装的话）。</p>
@@ -279,7 +318,8 @@
 
 </div>
 </main>
-  
+
+
 <main class="container">
         <div class="row">
           <div class="col-12">
