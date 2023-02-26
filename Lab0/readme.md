@@ -5,7 +5,7 @@
   <h1 id="安装-anaconda">安装 Anaconda</h1>
 <p>Anaconda 可用于 Windows、Mac OS X 和 Linux。可以在 <a href="https://www.anaconda.com/download/" rel="noopener noreferrer" target="_blank">https://www.anaconda.com/download/</a> 上找到安装程序和安装说明。</p>
 <p>如果计算机上已经安装了 Python，这不会有任何影响。实际上，脚本和程序使用的默认 Python 是 Anaconda 附带的 Python。</p>
-<p>选择 Python 3.12 版本（你也可以根据具体的需要选择 Python 2 的版本）。此外，如果是 64 位操作系统，则选择 64 位安装程序，否则选择 32 位安装程序。选择下载合适的版本，并继续进行安装！</p>
+<p>选择 Python 3.11 版本（你也可以根据具体的需要选择 Python 2 的版本）。此外，如果是 64 位操作系统，则选择 64 位安装程序，否则选择 32 位安装程序。选择下载合适的版本，并继续进行安装！</p>
 <p>完成安装后，会自动进入默认的 conda 环境，而且所有包均已安装完毕，如下面所示。可以在终端或命令提示符中键入 <code>conda list</code>，以查看你安装的内容。</p>
 <figure class="figure">
   <img src="img/unnamed-220068-0.gif" alt="install numpy" class="img img-fluid">
@@ -325,21 +325,39 @@ custom_channels:
 <a></a>修改默认目录</h1> 
 <p>如果需要修改Jupyter打开的默认目录，可以参考以下方法：</p> 
 <p>1. 在<code>cmd</code>中 输入命令<code>jupyter notebook --generate-config</code>
-<img src="img/generate_config.png" alt="如何修改jupyter notebook的 默认目录和默认浏览器" style="width: 100%;">
+<figure class="figure">
+  <img src="img/generate_config.png" alt="生成配置文件" class="img img-fluid">
+  <figcaption class="figure-caption">
+                <p>生成配置文件</p>
+  </figcaption></figure>
 如果你是第一次生成，如第一行语句所示，如果是第二次或以后生成，如第5行语句所示，需要输入y确认覆盖。</p> 
 
 <p>2.  按照上图中路径寻找文件名是<code>“jupyter_notebook_config.py”</code>的文件。使用记事本或者默认程序打开。</p> 
 
 <p>3. 搜索“# The directory to use for notebooks and kernels.”，找到下方<code># c.NotebookApp.notebook_dir = ‘’</code> 并修改为<code>c.NotebookApp.notebook_dir = ‘指定的工作路径’</code>（注意将#号删除,以及引号为英文引号）</p> 
-<p><img src="img/dir.png" alt="如何修改jupyter notebook的 默认目录和默认浏览器？_Python_03"> 这样默认路径就变成了D盘根目录。如果你想修改为其他路径，请按此方法修改</p> 
+<p><figure class="figure">
+  <img src="img/dir.png" alt="修改路径" class="img img-fluid">
+    <figcaption class="figure-caption">
+                    <p>修改路径</p>
+                      </figcaption></figure>
+这样默认路径就变成了D盘根目录。如果你想修改为其他路径，请按此方法修改
+</p> 
 <p>4. 保存该文件，从Anaconda重启<code>jupyter nootbook</code>，确认默认路径更改了。</p> 
 
 <p>5. 在桌面上找到Jupyter快捷方式，或者在开始菜单搜索Jupyter，右键选择“更多”->“打开文件位置”。
-<img src="img/props.png" alt="属性"> 
+<figure class="figure">
+<img src="img/props.png" alt="修改属性" class="img img-fluid">
+<figcaption class="figure-caption">
+<p>修改属性</p>
+</figcaption></figure>
 选择“属性”，如下图所示，修改“%USERPROFILE%为刚才修改后的地址。如<code>...\jupyter-notebook-script.py "D:\\"</code>
-<img src="img/homepath.png" alt="属性"> 
-至此可以通过Jupyter快捷方式直接打开新的地址。（注意地址中的'\'始终是2个）
 
+<figure class="figure">
+<img src="img/homepath.png" alt="修改地址" class="img img-fluid">
+<figcaption class="figure-caption">
+<p>修改地址</p>
+</figcaption></figure>至此可以通过Jupyter快捷方式直接打开新的地址。（注意地址中的'\'始终是2个）
+</p>
 
 <h3 id="h1">
 
@@ -349,7 +367,7 @@ custom_channels:
             <div class="ud-atom">
   <h3></h3>
   <div>
-  <h1 id="本门课程使用的-python-版本">本门课程使用的 Python 版本</h1>
+<h1 id="本门课程使用的-python-版本">本门课程使用的 Python 版本</h1>
 <p>人工智能导论实验部分将专门使用（或者已经使用） Python 3。 </p>
 <h2 id="为何选择-python-3">为何选择 Python 3</h2>
 <ul>
