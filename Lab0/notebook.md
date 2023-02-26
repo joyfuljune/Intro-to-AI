@@ -28,9 +28,9 @@
 </div>
 
 <figure class="figure">
-  <img src="img/new-notebook.png" alt="空白文件" style="max-width:60%; max-height:60%;" class="img img-fluid">
+  <img src="img/02. Notebook+Interface-KkAuoUpqzJs.gif" alt="hello world" style="max-width:60%; max-height:60%;" class="img img-fluid">
       <figcaption class="figure-caption">
-        空白文件
+        hello world
       </figcaption>
 </figure>
                       
@@ -54,17 +54,14 @@
 <h3 id="命令面板">命令面板</h3>
 <p>小键盘符号代表命令面板。点击它会弹出一个带有搜索栏的面板，供你搜索不同的命令。这能切实帮助你加快工作速度，因此你将无需使用鼠标翻查各个菜单。你只需打开命令面板，然后键入要执行的操作。例如，如果要合并两个单元格：</p>
 </div>
-
 </div>
-<div class="divider"></div><div class="ud-atom">
-  <h3><p>Command+Palette</p></h3>
-  <div class="plyr plyr--full-ui plyr--video plyr--html5 plyr--paused plyr--stopped plyr--fullscreen-enabled"><div class="plyr__controls"><button type="button" class="plyr__control" data-plyr="play" aria-label="Play"><svg class="icon--pressed" role="presentation" focusable="false"><use xlink:href="#plyr-pause"></use></svg><svg class="icon--not-pressed" role="presentation" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="label--pressed plyr__sr-only">Pause</span><span class="label--not-pressed plyr__sr-only">Play</span></button><div class="plyr__progress"><input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" autocomplete="off" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="7.546485" aria-valuenow="0" id="plyr-seek-6706" style="--value:0%;"><progress class="plyr__progress__buffer" min="0" max="100" value="100" role="presentation" aria-hidden="true">% buffered</progress><span class="plyr__tooltip">00:00</span></div><div class="plyr__time plyr__time--current" aria-label="Current time">00:07</div><div class="plyr__volume" hidden=""><button type="button" class="plyr__control" data-plyr="mute" hidden=""><svg class="icon--pressed" role="presentation" focusable="false"><use xlink:href="#plyr-muted"></use></svg><svg class="icon--not-pressed" role="presentation" focusable="false"><use xlink:href="#plyr-volume"></use></svg><span class="label--pressed plyr__sr-only">Unmute</span><span class="label--not-pressed plyr__sr-only">Mute</span></button><input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="plyr-volume-6706" aria-valuetext="100.0%" style="--value:100%;"></div><button type="button" class="plyr__control" data-plyr="captions"><svg class="icon--pressed" role="presentation" focusable="false"><use xlink:href="#plyr-captions-on"></use></svg><svg class="icon--not-pressed" role="presentation" focusable="false"><use xlink:href="#plyr-captions-off"></use></svg><span class="label--pressed plyr__sr-only">Disable captions</span><span class="label--not-pressed plyr__sr-only">Enable captions</span></button><div class="plyr__menu"><button aria-haspopup="true" aria-controls="plyr-settings-6706" aria-expanded="false" type="button" class="plyr__control" data-plyr="settings"><svg role="presentation" focusable="false"><use xlink:href="#plyr-settings"></use></svg><span class="plyr__sr-only">Settings</span></button><div class="plyr__menu__container" id="plyr-settings-6706" hidden=""><div><div id="plyr-settings-6706-home"><div role="menu"><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Captions<span class="plyr__menu__value">Disabled</span></span></button><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Quality<span class="plyr__menu__value">undefined</span></span></button><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true"><span>Speed<span class="plyr__menu__value">1.75×</span></span></button></div></div><div id="plyr-settings-6706-captions" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Captions</span><span class="plyr__sr-only">Go back to previous menu</span></button><div role="menu"></div></div><div id="plyr-settings-6706-quality" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Quality</span><span class="plyr__sr-only">Go back to previous menu</span></button><div role="menu"></div></div><div id="plyr-settings-6706-speed" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Speed</span><span class="plyr__sr-only">Go back to previous menu</span></button><div role="menu"><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="0.5"><span>0.5×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="0.75"><span>0.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1"><span>Normal</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.25"><span>1.25×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.5"><span>1.5×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="true" value="1.75"><span>1.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="2"><span>2×</span></button></div></div></div></div></div><button type="button" class="plyr__control" data-plyr="fullscreen"><svg class="icon--pressed" role="presentation" focusable="false"><use xlink:href="#plyr-exit-fullscreen"></use></svg><svg class="icon--not-pressed" role="presentation" focusable="false"><use xlink:href="#plyr-enter-fullscreen"></use></svg><span class="label--pressed plyr__sr-only">Exit fullscreen</span><span class="label--not-pressed plyr__sr-only">Enter fullscreen</span></button></div><div class="plyr__video-wrapper"><video>
-  <source src="02. Command+Palette-xY4LhuW8xx0.mp4" type="video/mp4">
+<figure class="figure">
+  <img src="img/02. Command+Palette-xY4LhuW8xx0.gif" alt="commande palette" style="max-width:60%; max-height:60%;" class="img img-fluid">
+        <figcaption class="figure-caption">
+                合并代码行
+                      </figcaption>
+                      </figure>
 
-</video><div class="plyr__poster"></div></div><div class="plyr__captions"></div><button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><svg role="presentation" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="plyr__sr-only">Play</span></button></div>
-
-
-</div>
 <div class="divider"></div><div class="ud-atom">
   <h3></h3>
   <div>
@@ -81,13 +78,10 @@
   <div>
   <figure class="figure">
     <img src="img/notebook-download.png" alt="" class="img img-fluid">
-    <figcaption class="figure-caption">
-      
+    <figcaption class="figure-caption">另存为
     </figcaption>
   </figure>
 </div>
-
-
 </div>
 <div class="divider"></div>
           </div>
