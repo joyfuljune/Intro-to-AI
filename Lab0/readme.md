@@ -7,6 +7,9 @@
 <p>如果计算机上已经安装了 Python，这不会有任何影响。实际上，脚本和程序使用的默认 Python 是 Anaconda 附带的 Python。</p>
 <p>选择 Python 3.12 版本（你也可以根据具体的需要选择 Python 2 的版本）。此外，如果是 64 位操作系统，则选择 64 位安装程序，否则选择 32 位安装程序。选择下载合适的版本，并继续进行安装！</p>
 <p>完成安装后，会自动进入默认的 conda 环境，而且所有包均已安装完毕，如下面所示。可以在终端或命令提示符中键入 <code>conda list</code>，以查看你安装的内容。</p>
+<figure class="figure">
+  <img src="img/unnamed-220068-0.gif" alt="install numpy" class="img img-fluid">
+ <figcaption class="figure-caption">
 <p>在 Windows 上，会随 Anaconda 一起安装一批应用程序：</p>
 <ul>
 <li>Anaconda Navigator，它是用于管理环境和包的 GUI</li>
@@ -83,6 +86,9 @@
 <div class="divider"></div>
           </div>
 
+<<<<<<< HEAD
+
+=======
 <div class="col-12">
             <div class="ud-atom">
   <h3></h3>
@@ -90,7 +96,10 @@
   <h1 id="管理包">管理包</h1>
 <p>安装了 Anaconda 之后，管理包是相当简单的。要安装包，请在终端中键入 <code>conda install package_name</code>。例如，要安装 numpy，请键入 <code>conda install numpy</code>。</p>
 
-</video><div class="plyr__poster"></div></div><div class="plyr__captions"></div><button type="button" class="plyr__control plyr__control--overlaid plyr__control--pressed" data-plyr="play" aria-label="Play"><svg role="presentation" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="plyr__sr-only">Play</span></button></div>
+  <figure class="figure">
+      <img src="img/unnamed-220069-0.gif" alt="install numpy" class="img img-fluid">
+          <figcaption class="figure-caption">
+
 <p>你还可以同时安装多个包。类似 <code>conda install numpy scipy pandas</code> 的命令会同时安装所有这些包。还可以通过添加版本号（例如 <code>conda install numpy=1.10</code>）来指定所需的包版本。</p>
 <p>Conda 还会自动为你安装依赖项。例如，<code>scipy</code> 依赖于 <code>numpy</code>，因为它使用并需要 <code>numpy</code>。如果你只安装 <code>scipy</code> (<code>conda install scipy</code>)，则 conda 还会安装 <code>numpy</code>（如果尚未安装的话）。</p>
 <p>大多数命令都是很直观的。要卸载包，请使用 <code>conda remove package_name</code>。要更新包，请使用 <code>conda update package_name</code>。如果想更新环境中的所有包（这样做常常很有用），请使用 <code>conda update --all</code>。最后，要列出已安装的包，请使用前面提过的 <code>conda list</code>。</p>
@@ -125,7 +134,6 @@
     <fieldset>
       <legend><p>通过 conda ，你可使用以下哪个命令来安装包 <code>numpy</code> 和 <code>pandas</code>？（多选）</p></legend>
     </fieldset>
-
     <div>
       <input type="checkbox" value="a1480541673069" name="220072" id="a1480541673069">
       <label for="a1480541673069"><p><code>conda install numpy</code></p></label>
@@ -149,6 +157,4 @@
   </details>
 </div>
 
-</div>
-<div class="divider"></div>
-          </div>
+
