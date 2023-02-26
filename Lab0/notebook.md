@@ -524,6 +524,64 @@ $$</code></pre>
 <div class="divider"></div>
 </div>       
           
-          
+<div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="创建幻灯片">创建幻灯片</h1>
+<p>通过 notebook 创建幻灯片是我最爱的功能之一，<a href="http://nbviewer.jupyter.org/format/slides/github/jorisvandenbossche/2015-PyDataParis/blob/master/pandas_introduction.ipynb#/" rel="noopener noreferrer" target="_blank">你可以在浏览器中直接打开它</a>，它介绍了用于处理数据的 Pandas。</p>
+<p>在 notebook 中创建幻灯片的过程像平常一样，但需要指定作为幻灯片的单元格和单元格的幻灯片类型。在菜单栏中，点击“View”（视图）&gt;“Cell Toolbar”（单元格工具栏）&gt;“Slideshow”（幻灯片），以便在每个单元格上弹出幻灯片单元格菜单。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/slides-cell-toolbar-menu.png" alt="打开单元格的幻灯片工具栏" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>打开单元格的幻灯片工具栏</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>这会在每个单元格上显示一个下拉菜单，让你选择单元格在幻灯片中的显示方式。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/slides-choose-slide-type.png" alt="选择幻灯片类型" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>选择幻灯片类型</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p><strong>Slides</strong>（幻灯片）是你从左向右移动的完整幻灯片。按向上或向下的箭头时，<strong>Sub-slides</strong>（子幻灯片）会出现在幻灯片中。<strong>Fragments</strong>（片段）最初是隐藏的，在你按下按钮时会出现。选择Skip（忽略）会在幻灯片中忽略该单元格，而选择 <strong>Notes</strong>（备注）会将为演讲者保留备注。</p>
+<h2 id="运行幻灯片">运行幻灯片</h2>
+<p>要通过 notebook 文件创建幻灯片，需要使用 <code>nbconvert</code>：</p>
+<pre><code class="bash language-bash">    jupyter nbconvert notebook.ipynb --to slides</code></pre>
+<p>这只是将 notebook 转换为幻灯片必需的文件，你需要向其提供 HTTP 服务器才能真正看到演示文稿。</p>
+<p>要转换它并立即看到它，请使用</p>
+<pre><code class="bash language-bash">jupyter nbconvert notebook.ipynb --to slides --post serve</code></pre>
+<p>这会在浏览器中打开幻灯片，让你可以演示它。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>          
 
 
