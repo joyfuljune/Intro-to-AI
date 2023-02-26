@@ -27,9 +27,9 @@
   <h3><p>序言</p></h3>
   <div>
   <h1 id="anaconda">Anaconda</h1>
-<p>欢迎学习本课程，如何使用 <a href="https://www.continuum.io/why-anaconda" rel="noopener noreferrer" target="_blank">Anaconda</a> 来管理 Python 所用的包和环境。Anaconda 能让你在数据科学的工作中轻松安装经常使用的程序包。你还将使用它创建虚拟环境，以便更轻松地处理多个项目。Anaconda 简化了工作流程，并且解决了多个包和 Python 版本之间遇到的大量问题。</p>
+<p>如何使用 <a href="https://www.continuum.io/why-anaconda" rel="noopener noreferrer" target="_blank">Anaconda</a> 来管理 Python 所用的包和环境。Anaconda 能让你在数据科学的工作中轻松安装经常使用的程序包。你还将使用它创建虚拟环境，以便更轻松地处理多个项目。Anaconda 简化了工作流程，并且解决了多个包和 Python 版本之间遇到的大量问题。</p>
 <p>Anaconda 实际上是一个软件发行版，它附带了 <code>conda</code>、Python 和 150 多个科学包及其依赖项。应用程序 <code>conda</code> 是包和环境管理器。Anaconda 的下载文件比较大（约 500 MB），因为它附带了 Python 中最常用的数据科学包。如果只需要某些包，或者需要节省带宽或存储空间，也可以使用 <a href="https://conda.io/miniconda.html" rel="noopener noreferrer" target="_blank">Miniconda</a> 这个较小的发行版（仅包含 <code>conda</code> 和 Python）。但你仍可以使用 <code>conda</code> 来安装任何可用的包，只是它自身没有附带这些包而已。</p>
-<p><code>conda</code> 只能通过命令行来使用。因此，如果你觉得它很难用，可以参考<a href="https://www.lynda.com/-tutorials/Windows-command-line-basics/497312/513424-4.html" rel="noopener noreferrer" target="_blank">面向 Windows 的命令提示符教程</a>，或者学习面向 OSX/Linux 用户的 <a href="https://www.udacity.com/course/linux-command-line-basics--ud595" rel="noopener noreferrer" target="_blank">Linux 命令行基础知识</a>课程。</p>
+<p><code>conda</code> 只能通过命令行来使用。因此，如果你觉得它很难用，可以参考<a href="https://learn.microsoft.com/zh-cn/windows/terminal/command-line-arguments?tabs=windows" target="_blank">面向 Windows 的命令提示符教程</a>，或者学习面向 OSX/Linux 用户的命令行基础知识课程。</p>
 <p>你可能已经安装了 Python，并且想知道为何还需要 Anaconda。首先， Anaconda 附带了一大批常用数据科学包，因此你可以立即开始处理数据。其次，使用 <code>conda</code> 来管理包和环境能减少将来在处理数据过程中使用到的各种库与版本时遇到的问题。</p>
 <h2 id="管理包">管理包</h2>
 </div>
@@ -77,8 +77,6 @@
 <p>你可以使用conda环境管理器分隔不同项目的包。你常常要使用依赖于某个库的不同版本的代码。例如，你的代码可能使用了 Numpy 中的新功能，或者使用了已删除的旧功能。实际上，不可能同时安装两个 Numpy 版本。你要做的应该是，为每个 Numpy 版本创建一个环境，然后在项目的对应环境中工作。</p>
 <p>在应对 Python 2 和 Python 3 时，此问题也会常常发生。你可能会使用在 Python 3 中不能运行的旧代码，以及在 Python 2 中不能运行的新代码。同时安装两个版本可能会造成许多混乱和错误，而创建独立的环境会好很多。</p>
 <p>你也可以将环境中的包列表导出为文件，然后将该文件与代码打包在一起。这能让其他人轻松加载代码的所有依赖项。pip 提供了类似的功能，即 <code>pip freeze &gt; requirements.txt</code>。</p>
-<h2 id="接下来介绍的内容">接下来介绍的内容</h2>
-<p>接下来，我会详细介绍 Anaconda 的用法。首先，我会介绍它的安装过程，然后介绍如何使用包管理器，最后介绍如何创建和管理环境。</p>
 </div>
 
 </div>
