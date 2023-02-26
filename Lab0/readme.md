@@ -325,11 +325,13 @@ custom_channels:
 <a></a>修改默认目录</h1> 
 <p>如果需要修改Jupyter打开的默认目录，可以参考以下方法：</p> 
 <p>1. 在<code>cmd</code>中 输入命令<code>jupyter notebook --generate-config</code>
-<img src="img/generate_config" alt="如何修改jupyter notebook的 默认目录和默认浏览器？_	Jupyter教程" style="width: 100%;"></p> 
-<p><strong>(2) 按照第1步找到的路径寻找文件名是<code>“jupyter_notebook_config.py”</code>的一个文件</strong></p> 
-<p><img src="https://s2.51cto.com/images/blog/202106/18/e64ff39ac643df4899cf12547380f753.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=/format,webp/resize,m_fixed,w_1184" alt="如何修改jupyter notebook的 默认目录和默认浏览器？_	Jupyter教程_02" style="width: 100%;"></p> 
-<p><strong>(3) 用<code>notebook</code>打开该文件，修改</strong></p> 
-<p>“# The directory to use for notebooks and kernels.”下面的</p> 
+<img src="img/generate_config.png" alt="如何修改jupyter notebook的 默认目录和默认浏览器" style="width: 100%;">
+如果你是第一次生成，如第一行语句所示，如果是第二次或以后生成，如第5行语句所示，需要输入y确认覆盖。</p> 
+
+<p>2.  按照上图中路径寻找文件名是<code>“jupyter_notebook_config.py”</code>的文件。使用记事本或者默认程序打开。</p> 
+
+<p>3. 搜索
+“# The directory to use for notebooks and kernels.”下面的</p> 
 <p>“# c.NotebookApp.notebook_dir = ‘’”为</p> 
 <p>“c.NotebookApp.notebook_dir = ‘指定的工作路径’”（注意将#号删除）</p> 
 <p><img src="https://s2.51cto.com/images/blog/202106/18/62ca3a7471d583f9846028ff3621a57f.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=/format,webp/resize,m_fixed,w_1184" alt="如何修改jupyter notebook的 默认目录和默认浏览器？_Python_03"></p> 
