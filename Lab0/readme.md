@@ -334,7 +334,9 @@ custom_channels:
 <p><img src="img/dir.png" alt="如何修改jupyter notebook的 默认目录和默认浏览器？_Python_03"> 这样默认路径就变成了D盘根目录。如果你想修改为其他路径，请按此方法修改</p> 
 <p>4. 保存该文件，从Anaconda重启<code>jupyter nootbook</code>，确认默认路径更改了。</p> 
 
-<p>5. 更改快捷方式配置。如果你发现打开Jupyter后的默认路径仍然是原有路径，而从Anaconda GUI界面打开Jupyter是修改后的路径，说明需要作进一步配置。打开Jupyter快捷键指向文件地址。
+<p>5. 更改快捷方式配置。如果你发现打开Jupyter后的默认路径仍然是原有路径，而从Anaconda GUI界面打开Jupyter是修改后的路径，说明需要作进一步配置。在桌面上找到Jupyter快捷方式，或者在开始菜单搜索Jupyter，右键选择“更多”->“打开文件位置”。
+<img src="img/props.png" alt="如何修改jupyter notebook的 默认目录和默认浏览器？_Python_03"> 
+选择“属性”，如下图所示，修改“%USERPROFILE%为刚才修改后的地址。<code>
 
 
 <h3 id="h1">
