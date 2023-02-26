@@ -518,10 +518,12 @@ $$</code></pre>
 <div>
 <h1 id="代码单元格">代码单元格</h1>
   <p>notebook 中的大部分工作均在代码单元格中完成。这是编写和执行代码的地方。在代码单元格中可以执行多种操作，例如编写代码、给变量赋值、定义函数和类、导入包等。在一个单元格中执行的任何代码在所有其他单元格中均可用。</p>
-  <p>请在下面下载此 notebook <a href="https://raw.githubusercontent.com/udacity/cn-deep-learning/master/tutorials/jupyter-notebook-tutorial/working-with-code-cells.ipynb" rel="noopener noreferrer" target="_blank">Working With Code Cells</a>，然后从你自己的 notebook 服务器运行它（在你的终端中，转到包含此 notebook 文件的目录，然后输入 <code>jupyter notebook</code>）。浏览器可能会尝试不下载就打开此 notebook 文件。如果是这样，请右击链接并选择“链接另存为…”。</p>
+  <p>请在下面或当前目录下载此 notebook <a href="working-with-code-cells.ipynb" rel="noopener noreferrer" target="_blank">Working With Code Cells</a>，然后从你自己的 notebook 服务器运行它（在你的终端中，转到包含此 notebook 文件的目录，然后输入 <code>jupyter notebook</code>）。浏览器可能会尝试不下载就打开此 notebook 文件。如果是这样，请右击链接并选择“链接另存为…”。</p>
 </div>
 </div>
 <div class="divider"></div>
 </div>       
           
           
+
+
