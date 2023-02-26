@@ -11,9 +11,9 @@
   <h3></h3>
   <div>
   <figure class="figure">
-    <img src="img/new-notebook.png" alt="" class="img img-fluid">
+    <img src="img/new-notebook.png" alt="空白文件" class="img img-fluid">
     <figcaption class="figure-caption">
-      
+      空白文件
     </figcaption>
   </figure>
 </div>
