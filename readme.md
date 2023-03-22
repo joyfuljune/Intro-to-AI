@@ -5,6 +5,6 @@
 <li> 实验2：优化  </li>
 <li> 实验3：概率 </li>
 <li> 实验4：LR </li>
-<li> 实验5：kNN </li>
-<li> 实验6：NLP </li>
-<li> 实验7：CV </li>
+<li> 实验5：ML-1 </li>
+<li> 实验6：ML-2 </li>
+<li> 随堂考试 </li>
