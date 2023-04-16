@@ -2,9 +2,9 @@ chat-gpt由于国内封禁，提供了以下网址给同学们体验目前最先
 
 如果打不开或者速度慢可更换另一个。
 
-https://www.aiai.zone/#/chat/1002
+https://www.cleandx.xyz
 
-https://ai.bo-e.com/
+https://chat.chuangzhikeji.com/zh
 
 https://zcc.app/
 
